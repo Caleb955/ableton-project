@@ -1,0 +1,136 @@
+.footer {
+  width: min(90%, 50em);
+  margin-inline: auto
+}
+
+.footer-1 {
+  font-size: 1.875em;
+  font-weight: 1.875em
+}
+
+.footer-2 p {
+  font-size: 0.875em
+}
+
+.footer-2 div:nth-child(3) section {
+  display: flex
+}
+
+.footer-2 div:nth-child(3) section input {
+  flex-grow: 1;
+  padding: 0.5em 0.4375em;
+  background: #ececec;
+  outline: none;
+  border: none
+}
+
+.footer-2 div:nth-child(3) section #btn {
+  background: var(--blue-color);
+  color: var(--white-color);
+  font-size: 0.625em;
+  font-weight: bold;
+  padding: 0 0.625em;
+  border: none
+}
+
+.footer-2 div:nth-child(6) article {
+  display: var(--flex-box);
+  gap: 0.3125em
+}
+
+.footer-2 div:nth-child(6) article button {
+  display: var(--flex-box);
+  border: none;
+  gap: 0.9375em;
+  height: 1.5625em;
+  align-items: center;
+  padding-left: 0.625em
+}
+
+.footer-2 div:nth-child(6) article button i {
+  transform: rotate(85deg)
+}
+
+.footer-2 div:nth-child(6) article button p {
+  margin-bottom: 0
+}
+
+.footer-2 {
+  display: grid;
+  gap: 1.875em
+}
+
+@media(min-width: 700px) {
+  .footer-2 {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media(min-width: 900px) {
+  .footer-2 {
+    grid-template-columns: 1fr 1fr 1fr
+  }
+}
+
+.footer-2 div:nth-child(1) section {
+  display: flex;
+  align-items: center;
+  gap: 0.3125em
+}
+
+.footer-2 div:nth-child(1) section img {
+  width: 1.875em;
+  height: 1.875em;
+  flex-shrink: 0;
+  flex-grow: 0
+}
+
+.footer-3 {
+  display: var(--flex-box);
+  justify-content: space-between;
+  width: min(100%, 56.25em)
+}
+
+@media(min-width: 43.75em) {
+  .footer-3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+  }
+}
+
+.footer-3 ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.75em
+}
+
+@media(min-width: 43.75em) {
+  .footer__3 ul {
+    display: var(--flex-box);
+    gap: 0.5em
+  }
+}
+
+.footer-3 div {
+  display: var(--flex-box);
+  align-items: end;
+  gap: 0.625em;
+  font-size: clamp(0.6875em, 2vw, 0.8125em);
+  margin: 0
+}
+
+@media(min-width: 43.75em) {
+  .footer__3 div {
+    align-items: flex-end
+  }
+}
+
+.footer-3 div p {
+  margin-bottom: 0
+}
+
+.footer span {
+  font-size: 0.875em;
+  font-weight: bold
+}

@@ -1,0 +1,66 @@
+.header {
+  display: var(--flex-box);
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(0.75em, 2vw, 0.875em);
+  padding: 0 0.625em;
+  height: 3.125em;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: var(--white-color);
+  z-index: 100;
+  box-sizing: inherit;
+  border-bottom: solid 1px #dedede
+}
+
+.header-first {
+  display: var(--flex-box);
+  align-items: center;
+  gap: 0.3125em
+}
+
+.header-first div {
+  display: var(--flex-box);
+  gap: 0.3125em
+}
+
+@media(min-width: 700px) {
+  .header-first div {
+    gap: 0.625em
+  }
+}
+
+.header-second {
+  display: var(--flex-box);
+  gap: 0.625em;
+  display: none
+}
+
+@media(min-width: 43.75em) {
+  .header-second {
+    display: flex
+  }
+}
+
+.header-second span {
+  color: var(--blue-color)
+}
+
+@media(min-width: 43.75em) {
+  .header-third {
+    display: none
+  }
+}
+
+.header p {
+  margin-bottom: 0
+}
+
+#header-2 {
+  display: flex;
+  gap: 0.625em;
+  padding-left: 0.625em;
+  padding-block: 0.9375em
+}

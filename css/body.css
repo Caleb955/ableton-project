@@ -1,0 +1,198 @@
+.main-first {
+  min-height: 28.125em;
+  width: min(95%, 68.75em);
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 1.25em;
+  overflow: hidden
+}
+
+.main-first img {
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  inset: 0;
+  height: 100%;
+  width: 100%
+}
+
+.main-first span {
+  color: #ff764d;
+  font-size: 2.1875em;
+  font-weight: bold;
+  z-index: 10;
+  background: rgba(255, 255, 255, .7);
+  padding: 0.625em 0.9375em;
+  border-radius: 1.25em
+}
+
+.main-second figcaption,
+.main-fourth figcaption,
+.main-sixth figcaption {
+  display: grid;
+  margin-inline: auto;
+  gap: 1.25em;
+  width: min(90%, 65ch);
+  padding: 4.375em 0
+}
+
+.main-second figcaption p:nth-child(1),
+.main-fourth figcaption p:nth-child(1),
+.main-sixth figcaption p:nth-child(1) {
+  font-size: 1.25em;
+  font-weight: 6.25em
+}
+
+.main-second figcaption span {
+  color: var(--blue-color);
+}
+
+.main-second figcaption p:nth-child(2),
+.main-fourth figcaption p:nth-child(2),
+.main-sixth figcaption p:nth-child(2),
+.main-fifth p {
+  font-size: 0.8125em;
+  line-height: 1.25em;
+}
+
+.main-third {
+  min-height: 43.75em;
+  position: relative;
+  overflow: hidden;
+}
+
+@media(min-width: 56.25em) {
+  .main-third {
+    display: var(--flex-box)
+  }
+}
+
+.main-third #container-one {
+  flex-grow: 1;
+  min-height: 21.875em;
+}
+
+.main-third #container-two {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background: var(--yellow-color);
+  flex-grow: 1;
+  min-height: 21.875em;
+  border-top-left-radius: 1.25em;
+  border-bottom-left-radius: 1.25em;
+}
+
+.main-third #container-three {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  gap: 1.25em;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: min(90%, 62.5em);
+  margin-inline: auto;
+}
+
+@media(min-width: 56.25em) {
+  .main-third #container-three {
+    flex-direction: row-reverse;
+  }
+}
+
+.main-third #container-three picture {
+  flex-grow: 1;
+  display: grid;
+}
+
+.main-third #container-three picture:nth-child(1) {
+  flex-basis: 10em;
+}
+
+.main-third #container-three picture:nth-child(2) img {
+  height: 25em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+}
+
+@media(min-width: 56.25em) {
+  .main-third #container-three picture:nth-child(2) img {
+    margin-inline: auto;
+    margin-block: auto;
+    /* width: min(90%, 37.5em); */
+  }
+}
+
+.main-third #container-three picture:nth-child(1) img {
+  height: 18.75em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+@media(min-width: 56.25em) {
+  .main-third #container-three picture:nth-child(1) img {
+    margin-inline: auto;
+    margin-block: auto;
+    width: min(100%, 17.5em)
+  }
+}
+
+.main-fifth {
+  display: block;
+}
+
+.main-fifth div {
+  display: flex;
+  margin-inline: auto;
+  width: min(90%, 36.15625em);
+  height: 12.5em;
+  position: relative;
+  padding-block: 6.25em;
+  overflow: hidden;
+  border-radius: 1.25em;
+  overflow: hidden
+}
+
+.main-fifth div img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top
+}
+
+.main-fifth div section {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  inset: 0
+}
+
+.main-fifth div section i {
+  color: var(--white-color);
+  background: var(--blue-color);
+  padding: 1.5625em 1.25em;
+  border-radius: 50%;
+  font-style: normal
+}
+
+.main-fifth p {
+  margin-inline: auto;
+  width: min(90%, 43.75em);
+  margin-bottom: 4.375em
+}
+
+.main-sixth figcaption {
+  padding-top: 0
+}
